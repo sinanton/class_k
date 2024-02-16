@@ -1,0 +1,10 @@
+num1 = float(input("Введите первое вещественное число: "))
+num2 = float(input("Введите второе вещественное число: "))
+if num1 > num2:
+    max_num = num1
+    min_num = num2
+else:
+    max_num = num2
+    min_num = num1
+print("Максимальное значение:", max_num)
+print("Минимальное значение:", min_num)
