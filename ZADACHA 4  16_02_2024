@@ -1,0 +1,12 @@
+import math
+
+side = float(input("Введите сторону квадрата: "))
+radius = float(input("Введите радиус круга: "))
+
+diameter = 2 * radius
+diagonal = side * math.sqrt(2)
+
+if diagonal <= diameter:
+    print("Квадрат впишется в круг.")
+else:
+    print("Квадрат не впишется в круг.")
