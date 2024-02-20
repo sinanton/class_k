@@ -1,0 +1,10 @@
+num1 = float(input("Введите первое число: "))
+num2 = float(input("Введите второе число: "))
+if num1 < 0 and num2 < 0:
+    summa = num1 + num2
+    print("Сумма отрицательных чисел:", summa)
+elif num1 > 0 and num2 > 0:
+    summa = num1 - num2
+    print("Разность положительных чисел:", summa)
+else:
+    print(False)
