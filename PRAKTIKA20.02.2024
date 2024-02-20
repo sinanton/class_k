@@ -1,0 +1,5 @@
+top = input("Введите строку: ")
+if len(top) > 10:
+    print(top[:5])
+else:
+    print(top)
