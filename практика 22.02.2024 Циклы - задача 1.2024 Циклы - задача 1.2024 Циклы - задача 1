@@ -1,0 +1,5 @@
+all_keys = ['red key', 'blue key', 'golden key', 'red key', 'blue key', 'white key', 'golden key']
+
+if 'golden key' in all_keys:
+    count = all_keys.count('golden key')
+    print(True, count)
