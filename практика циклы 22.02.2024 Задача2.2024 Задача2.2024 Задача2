@@ -1,0 +1,38 @@
+message = '6_185+_7*/#4i/*(@n'
+decoded_message = ''
+
+for char in message:
+    if char == '7':
+        decoded_message += 'П'
+    elif char == '1':
+        decoded_message += 'Т'
+    elif char == 'n':
+        decoded_message += '!'
+    elif char == '+':
+        decoded_message += 'Я'
+    elif char == 'i':
+        decoded_message += 'И'
+    elif char == '/':
+        decoded_message += 'Л'
+    elif char == '(':
+        decoded_message += 'С'
+    elif char == '5':
+        decoded_message += 'Б'
+    elif char == '6':
+        decoded_message += 'У'
+    elif char == '_':
+        decoded_message += ' '
+    elif char == '*':
+        decoded_message += 'О'
+    elif char == '8':
+        decoded_message += 'Е'
+    elif char == '#':
+        decoded_message += 'У'
+    elif char == '4':
+        decoded_message += 'Ч'
+    elif char == '@':
+        decoded_message += 'Ь'
+    else:
+        decoded_message += char
+
+print(decoded_message)
