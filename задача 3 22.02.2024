@@ -1,0 +1,24 @@
+def get_positive_input():
+    while True:
+        try:
+            side = float(input("Введите длину стороны прямоугольника: "))
+            if side <= 0:
+                print("Какая-то из сторон меньше или равна нулю. Повторите ввод!")
+            else:
+                return side
+        except ValueError:
+            print("Некорректный ввод. Введите число больше нуля.")
+
+side1 = get_positive_input()
+side2 = get_positive_input()
+area1 = side1 * side2
+side1 = get_positive_input()
+side2 = get_positive_input()
+area2 = side1 * side2
+if area1 > area2:
+    print("Первый прямоугольник больше второго.")
+elif area2 > area1:
+    print("Второй прямоугольник больше первого.")
+else:
+    print("Площади прямоугольников равны.")
+
