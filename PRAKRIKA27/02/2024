@@ -1,0 +1,37 @@
+Задание FOR
+password = "qwerty123"
+
+pas1 = input("Введите пароль: ")
+
+for _ in range(3):
+    if pas1== password:
+        print("Доступ разрешен. У вас полный доступ.")
+        break
+    else:
+        pas1 = input("Неверный пароль. Попробуйте снова: ")
+else:
+    print("Исчерпаны все попытки. Доступ запрещен.")
+
+Задание WHILE
+import random
+
+def play_game():
+    words = ["карандаш", "автобус", "компьютер", "зонт", "молоко", "слон", "медведь", "книга"]
+    secret_word = random.choice(words)
+    attempts = 3
+    selected_word = random.choice(words)
+
+    print("Добро пожаловать в игру! Угадайте слово из 6 букв.")
+
+    while attempts > 0:
+        guess = input("Введите слово: ")
+        if guess == secret_word:
+            print("Поздравляю, вы угадали слово '{}'! Количество попыток: {}".format(secret_word, 3 - attempts + 1))
+            return
+        else:
+            print("Неверно. Попробуйте еще раз.")
+            attempts -= 1
+
+    print("К сожалению, вы не угадали. Загаданное слово было '{}'".format(secret_word))
+
+play_game()
