@@ -1,0 +1,16 @@
+def print_multiplication_table(column, start, end):
+    for i in range(start, end+1):
+        result = i * column
+        print(f"{i} * {column} = {result}")
+
+n = int(input("Введите число n: "))
+
+print("\nТаблица умножения для", n-1, ":\n")
+print_multiplication_table(n-1, 1, 10)
+
+print("\nТаблица умножения для", n, ":\n")
+print_multiplication_table(n, 1, 10)
+
+print("\nТаблица умножения для", n+1, ":\n")
+print_multiplication_table(n+1, 1, 10)
+

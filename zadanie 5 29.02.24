@@ -1,0 +1,7 @@
+total = 0
+
+while total <= 50:
+    num = float(input("Введите число: "))
+    total += num
+
+print(f"Сумма введенных чисел превысила 50. Итоговая сумма: {total}")

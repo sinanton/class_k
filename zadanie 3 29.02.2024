@@ -1,0 +1,11 @@
+random_elements = [3, 6, -9, '-5', 'str', list, 'elem', None, -1, 10, str]
+count_numbers = 0
+negative_sum = 0
+for element in random_elements:
+    if isinstance(element, int) or isinstance(element, float):
+        count_numbers += 1
+        if element < 0:
+            negative_sum += element  
+print("Количество числовых элементов в списке:", count_numbers)
+print("Сумма отрицательных чисел в списке:", negative_sum)
+
