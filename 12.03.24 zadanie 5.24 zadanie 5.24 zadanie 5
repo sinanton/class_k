@@ -1,0 +1,21 @@
+negative_numbers = []
+positive_numbers = []
+zeros = []
+num_count = int(input("Введите количество чисел: "))
+for i in range(num_count):
+    num = int(input("Введите число: "))
+    if num < 0:
+        negative_numbers.append(num)
+    elif num > 0:
+        positive_numbers.append(num)
+    else:
+        zeros.append(num)
+print("Сумма отрицательных чисел:", sum(negative_numbers))
+if len(positive_numbers) > 0:
+    average = sum(positive_numbers) / len(positive_numbers)
+    print("Среднее арифметическое положительных чисел:", average)
+else:
+    print("В списке нет положительных чисел")
+zeros = ['*' if x == 0 else x for x in zeros]
+print("Количество нулей:", len(zeros))
+print("Элементы списка с нулями:", zeros)

@@ -1,0 +1,5 @@
+mass = [14, -6, 3, 11, 6, 8.5, 99, -20, -6, 10, 40, 0.25, -4, 5]
+positive_numbers = [x for x in mass if x >= 0]
+ascending_order = sorted(positive_numbers)
+descending_order = sorted(positive_numbers, reverse=True)
+print(ascending_order)
