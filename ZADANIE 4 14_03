@@ -1,0 +1,8 @@
+random_elements = [['toy', 'bee', 'cheese', 'ear'],
+                   [False, 'word', '0110110', 10],
+                   ['happiness', '(」°ロ°)」', 'luck', None],
+                   ['car', '<- code ->', 4.7, True]]
+
+for index, row in enumerate(random_elements):
+    second_element = row[3]
+    print(f'Индекс: {index}, Элемент: {second_element}')

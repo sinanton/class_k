@@ -1,0 +1,6 @@
+fruits = [['Banana', 'apple'], ['apricot', 'Avocado'], ['lime', 'lemon'], ['Mango', 'grapes']]
+
+for sublist in fruits:
+    for item in sublist:
+        if item.isupper():
+            print(item)
