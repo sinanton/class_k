@@ -1,0 +1,10 @@
+bin_sy = ['11011111', '11011101', '11000111', '11011100', '11011110']
+dec_numbers = []
+for bin_num in bin_sy:
+    dec_num = int(bin_num, 2)
+    dec_numbers.append(dec_num)
+    print(dec_num)
+max_dec = max(dec_numbers)
+min_dec = min(dec_numbers)
+print("Максимальное число:", max_dec)
+print("Минимальное число:", min_dec)

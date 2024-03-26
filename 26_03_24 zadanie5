@@ -1,0 +1,6 @@
+import numpy as np
+matrix = np.random.rand(3, 3)
+print("Матрица 3x3:")
+print(matrix)
+result = np.trace(np.fliplr(matrix))
+print("Сумма чисел по диагонали справа налево:", result)
