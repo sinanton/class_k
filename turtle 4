@@ -1,0 +1,10 @@
+import turtle
+
+t = turtle.Turtle()
+major_radius = 100
+minor_radius = 50
+t.circle(major_radius, 90)
+t.circle(minor_radius, 90)
+t.circle(major_radius, 90)
+t.circle(minor_radius, 90)
+turtle.done()
