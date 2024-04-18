@@ -1,0 +1,10 @@
+import numpy as np
+M = 3
+N = 4
+B = np.random.randint(-10, 10, size=(M, N))  # генерируем целые числа от -10 до 10
+print("Матрица B[M,N]:")
+print(B)
+negative_product_array = np.prod(B[B < 0].reshape(-1, N), axis=0)
+negative_product_array = np.where(np.isnan(negative_product_array), 1, negative_product_array)  # заменяем NaN на 1
+print("Одномерный массив из произведений отрицательных элементов каждого столбца матрицы:")
+print(negative_product_array)
