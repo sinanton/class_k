@@ -1,0 +1,10 @@
+import random
+import numpy as np
+rows = 7
+cols = 4
+matrix_A = np.array([[random.randint(-10, 10) for _ in range(cols)] for _ in range(rows)])
+print("Матрица A[7,4]:")
+print(matrix_A)
+positive_sums = np.array([sum(filter(lambda x: x > 0, row)) for row in matrix_A])
+print("\nСуммы положительных элементов каждой строки:")
+print(positive_sums)
