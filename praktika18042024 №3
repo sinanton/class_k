@@ -1,0 +1,9 @@
+import numpy as np
+M = 4
+N = 3
+A = np.random.randint(0, 5, size=(M, N))  # генерируем целые числа от 0 до 4
+print("Матрица A[M,N]:")
+print(A)
+zero_count_array = np.sum(A == 0, axis=1)
+print("Одномерный массив из количеств нулевых элементов каждой строки матрицы:")
+print(zero_count_array)
