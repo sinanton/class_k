@@ -1,0 +1,9 @@
+import numpy as np
+M = 3
+N = 4
+A = np.random.rand(M, N)
+print("Матрица A[M,N]:")
+print(A)
+average_array = np.mean(A, axis=0)
+print("Одномерный массив из средних арифметических каждого столбца матрицы:")
+print(average_array)
